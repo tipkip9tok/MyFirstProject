@@ -1,0 +1,11 @@
+.collums  {
+   display: grid;
+   grid-template-rows: 1fr 1fr 1fr 1fr;
+   grid-template-columns: repeat(5, 1fr);
+   grid-gap: 2px;
+   font-size: 14px;
+   padding: .5em;
+   background: rgb(96, 171, 177);
+   text-align: center;
+   border: 2px solid black;
+}
