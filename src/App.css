@@ -1,16 +1,45 @@
-.app-wrapper {
-  margin: 0 auto;
-  display: grid;
-  width: 1200px;
-  background-color: rgb(182, 202, 240);
-  border-color: rgb(9, 157, 226);
-  border-style: solid;
+body {
+  font-family: 'open sans', sans-serif;
+  font-size: 16px;
+}
 
-  grid-template-areas:
-  "h h"
-  "n c";
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
 
-  grid-template-rows: 60px 1fr;
-    grid-template-columns: 2fr 10fr;
-    /*grid-gap: 10px;*/
+thead th {
+  text-align: left;
+  border-bottom: 2px solid black;
+}
+
+thead button {
+  border: 0;
+  border-radius: none;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: inherit;
+  padding: 0.5em;
+  margin-bottom: 1px;
+}
+
+thead button.ascending::after {
+  content: '👇';
+  display: inline-block;
+  margin-left: 1em;
+}
+
+thead button.descending::after {
+  content: '☝️';
+  display: inline-block;
+  margin-left: 1em;
+}
+
+tbody td {
+  padding: 0.5em;
+  border-bottom: 1px solid #ccc;
+}
+
+tbody tr:hover {
+  background-color: #eee;
 }
